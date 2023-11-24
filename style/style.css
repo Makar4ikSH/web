@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    font-size: 200%;
+}
+
+a{
+    margin: 5%;
+}
+
+.base-direction{
+    margin: 1%;
+    width: fit-content;
+    font-size: 300%;
+    font-weight:bolder;
+}
+
+.base-header{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #9693a7;
+}
+
+.base-info{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.name{
+    font-size: 400%;
+    font-weight: bold;
+    margin: 1%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.mini-direction{
+    margin: auto;
+    padding: 5%;
+    padding-bottom: 0%;
+    width: 70%;
+    font-size: 300%;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.work-header{
+    font-weight: bold;
+    font-size: 300%;
+    display: flex;
+    margin: auto;
+    padding: 5%;
+    justify-content: center;
+}
+
+.bar-work-duties{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.work-duties{
+    width: 70%;
+    padding: 5%;
+    
+}
+.card-duties{
+    background-color: #9693a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 25%;
+    border-radius: 20px;
+    transition-duration: 1s;
+    min-width: 200px;
+}
+
+.card-duties:hover{
+    background-color: #a183af;;
+    color: aliceblue;
+    transition-duration: 1s;
+}
+
+.text-card-duties{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    text-align: center;
+    padding: 15% ;
+}
+
+.quote-excerpt{
+    font-size: 400%;
+    font-weight: bold;
+    padding: 5%;
+    padding-bottom: 0%;
+    width: 70%;
+    font-size: 300%;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.footer{
+    display: flex;
+    background-color: #9693a7;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+.footer-button{
+    border-radius: 20px;
+    width: 30%;
+    height: 30px;
+    border-style: ridge;
+}
+
+@media screen and (max-width:1050px) {
+    .bar-work-duties{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 1200px;
+    }
+
+    .card-duties{
+        min-width: 300px;
+    }
+
+    .base-header{
+        flex-direction: column;
+    }
+
+    .name{
+        text-align: center;
+        font-size: 300%
+    }
+
+    .base-direction{
+        text-align: center;
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    a{
+        margin: 1%;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .name{
+        font-size: 200%;
+    }
+
+    .base-direction{
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    header{
+        flex-direction: column;
+        margin: 3%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .base-direction{
+        font-size: 125%;
+    }
+    .mini-direction{
+        font-size: 125%;
+    }
+    
+    .quote-excerpt{
+        font-size: 125%;
+    }
+    
+}
+
+
